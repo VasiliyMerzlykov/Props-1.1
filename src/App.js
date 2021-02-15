@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Stars from './components/Stars';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  return (    
+    <>
+    <Stars/>
+    <Stars countStars={0}/>
+    <Stars countStars={1}/>
+    <Stars countStars={2}/>
+    <Stars countStars={3}/>
+    <Stars countStars={4}/>
+    <Stars countStars={5}/>
+    <Stars countStars={6}/>
+    </>
   );
 }
 
